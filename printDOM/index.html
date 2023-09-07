@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Example</title>
+  </head>
+  <body>
+    <h1>Input Example</h1>
+
+    <form>
+      <label for="userInput">Enter something:</label>
+      <input type="text" id="userInput" />
+      <button type="button" onclick="printInput()">Submit</button>
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+      function printInput() {
+        var inputElement = document.getElementById("userInput");
+
+        var inputValue = inputElement.value;
+
+        var outputElement = document.getElementById("output");
+
+        outputElement.textContent = "You entered: " + inputValue;
+      }
+    </script>
+  </body>
+</html>
